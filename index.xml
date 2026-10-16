@@ -5,7 +5,31 @@
         <description>Recent content on Lyi</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate><atom:link href="https://bxycode000.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 12 Oct 2026 13:21:00 +0800</lastBuildDate><atom:link href="https://bxycode000.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>RPA：机器人流程自动化</title>
+            <link>https://bxycode000.github.io/p/what-is-rpa/</link>
+            <pubDate>Mon, 12 Oct 2026 13:21:00 +0800</pubDate>
+            <guid>https://bxycode000.github.io/p/what-is-rpa/</guid>
+            <description>&lt;p&gt;&lt;strong&gt;RPA&lt;/strong&gt;（Robotic Process Automation，机器人流程自动化）是一种&lt;strong&gt;非侵入式自动化技术&lt;/strong&gt;：通过模拟鼠标点击、键盘输入、数据读取等操作，在不改造现有系统的前提下自动执行流程。&lt;/p&gt;&#xA;&lt;p&gt;它的主要特点：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;能跨系统工作（ERP、CRM、网页、桌面应用）&lt;/li&gt;&#xA;&lt;li&gt;7×24 小时运行&lt;/li&gt;&#xA;&lt;li&gt;错误率极低&lt;/li&gt;&#xA;&lt;li&gt;低代码/无代码，业务人员也能搭建流程&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;    &lt;blockquote&gt;&#xA;        &lt;p&gt;概念参考：&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/1914681833695741092&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;知乎：RPA 是什么&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/blockquote&gt;&#xA;</description>
+        </item><item>
+            <title>ROI：投资回报率</title>
+            <link>https://bxycode000.github.io/p/what-is-roi/</link>
+            <pubDate>Mon, 12 Oct 2026 12:29:00 +0800</pubDate>
+            <guid>https://bxycode000.github.io/p/what-is-roi/</guid>
+            <description>&lt;p&gt;&lt;strong&gt;ROI&lt;/strong&gt;（Return on Investment，投资回报率）表示净收益相对于投入成本的百分比：&lt;/p&gt;&#xA;&#xA;    &lt;blockquote&gt;&#xA;        &lt;p&gt;&lt;strong&gt;ROI =（净利润 ÷ 初始投资）× 100%&lt;/strong&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;roi-的含义&#34;&gt;ROI 的含义&#xA;&lt;/h2&gt;&lt;p&gt;ROI 用于衡量一项投资带来的收益与投入成本之间的比例，是评估投资效率最常用的指标之一。它适用于股票、房地产、企业项目、营销活动等多种场景。&lt;/p&gt;&#xA;&lt;h2 id=&#34;计算公式&#34;&gt;计算公式&#xA;&lt;/h2&gt;&lt;p&gt;最常见的 ROI 公式为：&lt;/p&gt;&#xA;&#xA;    &lt;blockquote&gt;&#xA;        &lt;p&gt;&lt;strong&gt;ROI = 净收益 ÷ 投资成本 × 100%&lt;/strong&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/blockquote&gt;&#xA;</description>
+        </item><item>
+            <title>电商工作的自动化</title>
+            <link>https://bxycode000.github.io/p/automating-ecommerce-work/</link>
+            <pubDate>Mon, 12 Oct 2026 12:26:00 +0800</pubDate>
+            <guid>https://bxycode000.github.io/p/automating-ecommerce-work/</guid>
+            <description>&lt;p&gt;有逻辑的、重复性的电商工作流，可以使用 &lt;strong&gt;AI + RPA&lt;/strong&gt; 来完成。&lt;/p&gt;&#xA;&lt;p&gt;一个具体的例子是&lt;strong&gt;把商品的卖点转换成消费者的买点&lt;/strong&gt;：拿衣服来说，有的卖家商品介绍太专业，专业名词叠加在一起会让消费者一头雾水——商品无法触达用户。所以优化关键词很重要，比如把「吸湿速干」转换成「出汗后快速干燥」，增加了具体场景之后，消费者更愿意买单。&lt;/p&gt;&#xA;</description>
+        </item><item>
+            <title>电商思考</title>
+            <link>https://bxycode000.github.io/p/ecommerce-thinking/</link>
+            <pubDate>Tue, 18 Aug 2026 20:24:00 +0800</pubDate>
+            <guid>https://bxycode000.github.io/p/ecommerce-thinking/</guid>
+            <description>&lt;p&gt;运营的工作内容很多，是一条完整的链，每一环都要有人统筹：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;选品&lt;/li&gt;&#xA;&lt;li&gt;产品上架&lt;/li&gt;&#xA;&lt;li&gt;关键词布局&lt;/li&gt;&#xA;&lt;li&gt;主图、详情页制作&lt;/li&gt;&#xA;&lt;li&gt;采购、打包、发货&lt;/li&gt;&#xA;&lt;li&gt;广告投放、监控与分析&lt;/li&gt;&#xA;&lt;li&gt;客户纠纷处理&lt;/li&gt;&#xA;&lt;li&gt;每月利润统计核算&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;三个结构性痛点&#34;&gt;三个结构性痛点&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;获客难&lt;/strong&gt;：流量从哪里来，始终是第一位的难题&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;库存成本&lt;/strong&gt;：压货会吃掉现金流，理想状态是 just in time——按需补货、接近零库存&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;退货率高&lt;/strong&gt;：退货直接侵蚀利润，也反过来影响店铺评分&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
+        </item><item>
             <title>Hello World</title>
             <link>https://bxycode000.github.io/p/hello-world/</link>
             <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>

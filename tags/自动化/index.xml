@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>自动化 on Lyi</title>
+        <link>https://bxycode000.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+        <description>Recent content in 自动化 on Lyi</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-CN</language>
+        <lastBuildDate>Mon, 12 Oct 2026 13:21:00 +0800</lastBuildDate><atom:link href="https://bxycode000.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>RPA：机器人流程自动化</title>
+            <link>https://bxycode000.github.io/p/what-is-rpa/</link>
+            <pubDate>Mon, 12 Oct 2026 13:21:00 +0800</pubDate>
+            <guid>https://bxycode000.github.io/p/what-is-rpa/</guid>
+            <description>&lt;p&gt;&lt;strong&gt;RPA&lt;/strong&gt;（Robotic Process Automation，机器人流程自动化）是一种&lt;strong&gt;非侵入式自动化技术&lt;/strong&gt;：通过模拟鼠标点击、键盘输入、数据读取等操作，在不改造现有系统的前提下自动执行流程。&lt;/p&gt;&#xA;&lt;p&gt;它的主要特点：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;能跨系统工作（ERP、CRM、网页、桌面应用）&lt;/li&gt;&#xA;&lt;li&gt;7×24 小时运行&lt;/li&gt;&#xA;&lt;li&gt;错误率极低&lt;/li&gt;&#xA;&lt;li&gt;低代码/无代码，业务人员也能搭建流程&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;    &lt;blockquote&gt;&#xA;        &lt;p&gt;概念参考：&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/1914681833695741092&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;知乎：RPA 是什么&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/blockquote&gt;&#xA;</description>
+        </item><item>
+            <title>电商工作的自动化</title>
+            <link>https://bxycode000.github.io/p/automating-ecommerce-work/</link>
+            <pubDate>Mon, 12 Oct 2026 12:26:00 +0800</pubDate>
+            <guid>https://bxycode000.github.io/p/automating-ecommerce-work/</guid>
+            <description>&lt;p&gt;有逻辑的、重复性的电商工作流，可以使用 &lt;strong&gt;AI + RPA&lt;/strong&gt; 来完成。&lt;/p&gt;&#xA;&lt;p&gt;一个具体的例子是&lt;strong&gt;把商品的卖点转换成消费者的买点&lt;/strong&gt;：拿衣服来说，有的卖家商品介绍太专业，专业名词叠加在一起会让消费者一头雾水——商品无法触达用户。所以优化关键词很重要，比如把「吸湿速干」转换成「出汗后快速干燥」，增加了具体场景之后，消费者更愿意买单。&lt;/p&gt;&#xA;</description>
+        </item></channel>
+</rss>
