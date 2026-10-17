@@ -5,7 +5,19 @@
         <description>Recent content in Pages on Lyi</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bxycode000.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 17 Oct 2026 23:50:00 +0800</lastBuildDate><atom:link href="https://bxycode000.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>历史阅读</title>
+            <link>https://bxycode000.github.io/reading-history/</link>
+            <pubDate>Sat, 17 Oct 2026 23:50:00 +0800</pubDate>
+            <guid>https://bxycode000.github.io/reading-history/</guid>
+            <description></description>
+        </item><item>
+            <title>阅读</title>
+            <link>https://bxycode000.github.io/reading/</link>
+            <pubDate>Fri, 16 Oct 2026 12:00:00 +0800</pubDate>
+            <guid>https://bxycode000.github.io/reading/</guid>
+            <description>&lt;p&gt;微信读书阅读记录，数据由 &lt;code&gt;py scripts/weread/sync.py&lt;/code&gt; 经官方 Agent API 同步生成。&lt;/p&gt;&#xA;</description>
+        </item><item>
             <title>关于</title>
             <link>https://bxycode000.github.io/about/</link>
             <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
