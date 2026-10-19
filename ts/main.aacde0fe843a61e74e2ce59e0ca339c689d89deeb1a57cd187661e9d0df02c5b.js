@@ -372,7 +372,7 @@
   }
 
   // ns-hugo-params:/home/runner/work/blog/blog/themes/hugo-theme-stack/assets/ts/code-copy.ts
-  var codeblock = { copied: "", copy: "" };
+  var codeblock = { copied: "\u5DF2\u590D\u5236\uFF01", copy: "\u590D\u5236" };
 
   // ns-hugo-imp:/home/runner/work/blog/blog/themes/hugo-theme-stack/assets/ts/code-copy.ts
   function setupCodeCopy() {
