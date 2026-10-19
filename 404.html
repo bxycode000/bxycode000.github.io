@@ -16,13 +16,23 @@
 <meta property='og:description' content="这里，是英雄启程的地方...">
 <meta property='og:url' content='https://bxycode000.github.io/404.html'>
 <meta property='og:site_name' content='Lyi'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-10-16T12:00:00&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-10-19T00:00:00&#43;00:00 '/>
 <meta name="twitter:title" content="404 Page not found">
 <meta name="twitter:description" content="这里，是英雄启程的地方...">
     <link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<meta property="og:image" content="https://bxycode000.github.io/images/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lyi · 跨境电商、自动化与阅读记录">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bxycode000.github.io/images/og-cover.png">
 
     </head>
-    <body class="">
+    <body class="template-404">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -55,25 +65,29 @@
     <header>
         <figure class="site-avatar">
                 <a href="/">
-                    <img src="/images/avatar-256.webp" 
-                        width=""
-                        height=""
-                        class="site-logo"
-                        loading="lazy"
-                        alt="Avatar">
+                    <picture>
+                        <source srcset="/images/avatar-256.webp" type="image/webp">
+                        <img src="/images/avatar-256.jpg"
+                            width="256"
+                            height="256"
+                            class="site-logo"
+                            loading="eager"
+                            decoding="async"
+                            alt="Lyi">
+                    </picture>
                 </a>
                 
             </figure>
         
-        
+
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">Lyi</a></h1>
+            <p class="site-name"><a href="/">Lyi</a></p>
             <h2 class="site-description">这里，是英雄启程的地方...</h2>
         </div>
     </header><ol class="menu-social">
             
                 <li>
-                    <a 
+                    <a
                         href='https://github.com/bxycode000'
                         
                         title="GitHub"
@@ -210,54 +224,68 @@
 </aside>
 
             <main class="main full-width">
-    <div class="not-found-card">
-        <h1 class="article-title">404 错误</h1>
-        <h2 class="article-subtitle">页面不存在</h2>
-    </div><form action="/search/" class="search-form widget" data-json="/search/index.json">
-            <p>
-                <label>搜索</label>
-                <input id="searchInput" name="keyword" required placeholder="输入关键词..." />
-            
-                <button title="搜索">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
+    <div class="not-found">
+        <p class="not-found-kicker">404 · Not Found</p>
+        <h1 class="not-found-title">这个地址没有内容。</h1>
+        <p class="not-found-lead">可能是链接过期、地址拼写有误，或者这篇文章还没写完。下面几条路都能回到有内容的地方。</p>
 
-
-
-                </button>
-            </p>
-        </form>
-
-        <div class="search-result">
-            <h3 class="search-result--title section-title"></h3>
-            <div class="search-result--list article-list--compact"></div>
+        <div class="not-found-actions">
+            <a class="nf-btn nf-btn--primary" href="/">回到首页</a>
+            <a class="nf-btn" href="/archives/">浏览归档</a>
+            <a class="nf-btn" href="/search/">搜索全站</a>
         </div>
-        
-        <script>
-            window.searchResultTitleTemplate = "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
-        </script><script type="text/javascript" src="/ts/search.js" defer></script>
 
-        <script>
-            const wrongUrl = new URL(window.location.href);
+        <div class="not-found-recent">
+            <h2>最近更新</h2>
+            <ul>
+                <li>
+                    <a href="/p/what-is-rpa/">
+                        <time datetime="2026-10-12">2026 年 10 月 12 日</time>
+                        <span>RPA：机器人流程自动化</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/p/what-is-roi/">
+                        <time datetime="2026-10-12">2026 年 10 月 12 日</time>
+                        <span>ROI：投资回报率</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/p/automating-ecommerce-work/">
+                        <time datetime="2026-10-12">2026 年 10 月 12 日</time>
+                        <span>电商工作的自动化</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-            
-            const searchKeyword = decodeURIComponent(wrongUrl.pathname).split(/[/|-]/).join(' ').trim();
+    <footer class="site-footer">
+    <div class="footer-brand">
+        <b>Lyi</b>
+        <p>这里，是英雄启程的地方...</p>
+    </div>
 
-            document.getElementById('searchInput').setAttribute('value', searchKeyword);
-        </script><footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-        2026 Lyi
-    </section>
-    
-    <section class="powerby">
-        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.3">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
-    </section>
+    <div class="footer-links">
+        <nav class="footer-nav" aria-label="页脚导航">
+            <a href="/">主页</a>
+            <a href="/archives/">归档</a>
+            <a href="/reading/">阅读</a>
+            <a href="/about/">关于</a>
+            <a href="/search/">搜索</a>
+        </nav>
+        <div class="footer-social">
+            <a href="https://github.com/bxycode000" target="_blank" rel="noopener">GitHub</a>
+            <a href="/index.xml">RSS</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>
+            &copy;2026–2026 Lyi
+        </span>
+        <span>使用 Hugo 构建 · 主题 Stack</span>
+    </div>
 </footer>
 
 

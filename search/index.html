@@ -20,6 +20,16 @@
 <meta name="twitter:title" content="搜索">
 <meta name="twitter:description" content=""><link rel="alternate" type="application/json" href="https://bxycode000.github.io/search/index.json">
     <link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<meta property="og:image" content="https://bxycode000.github.io/images/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lyi · 跨境电商、自动化与阅读记录">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bxycode000.github.io/images/og-cover.png">
 <link rel="preload" href="/search/index.json" as="fetch" crossorigin="anonymous">
     </head>
     <body class="template-search">
@@ -55,25 +65,29 @@
     <header>
         <figure class="site-avatar">
                 <a href="/">
-                    <img src="/images/avatar-256.webp" 
-                        width=""
-                        height=""
-                        class="site-logo"
-                        loading="lazy"
-                        alt="Avatar">
+                    <picture>
+                        <source srcset="/images/avatar-256.webp" type="image/webp">
+                        <img src="/images/avatar-256.jpg"
+                            width="256"
+                            height="256"
+                            class="site-logo"
+                            loading="eager"
+                            decoding="async"
+                            alt="Lyi">
+                    </picture>
                 </a>
                 
             </figure>
         
-        
+
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">Lyi</a></h1>
+            <p class="site-name"><a href="/">Lyi</a></p>
             <h2 class="site-description">这里，是英雄启程的地方...</h2>
         </div>
     </header><ol class="menu-social">
             
                 <li>
-                    <a 
+                    <a
                         href='https://github.com/bxycode000'
                         
                         title="GitHub"
@@ -210,14 +224,29 @@
 </aside>
 
             <main class="main full-width">
-<form action="/search/" class="search-form"data-json="/search/index.json">
-    <p>
-        <label>搜索</label>
-        <input name="keyword" placeholder="输入关键词..." />
-    </p>
+<div class="search-page">
+    <header class="search-intro">
+        <p class="search-kicker">Search · 全站</p>
+        <h1 class="search-title">搜索</h1>
+        <p class="search-desc">搜索文章、笔记与阅读记录。多个关键词用空格分隔，标题命中的排在前面。</p>
+    </header>
 
-    <button title="搜索">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <form action="/search/" method="get" class="search-form search-form--page" id="searchForm" role="search" data-json="/search/index.json">
+        <div class="search-field">
+            <span class="search-field-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+</span>
+            <label class="sr-only" for="searchInput">搜索关键词</label>
+            <input id="searchInput" name="keyword" type="search" autocomplete="off" spellcheck="false"
+                placeholder="搜索关键词，如 RPA、ROI">
+            <kbd class="search-kbd" aria-hidden="true">Enter</kbd>
+            <button type="submit" class="search-submit" aria-label="搜索">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="10" cy="10" r="7" />
   <line x1="21" y1="21" x2="15" y2="15" />
@@ -225,29 +254,321 @@
 
 
 
-    </button>
-</form>
+            </button>
+        </div>
+    </form>
+    <p class="search-tip">按 <kbd>Esc</kbd> 清空 · 搜索范围包含已发布的文章与独立页面</p>
 
-<div class="search-result hidden">
-    <h3 class="search-result--title section-title"></h3>
-    <div class="search-result--list article-list--compact"></div>
+    <section class="search-idle" id="searchIdle" aria-label="搜索建议">
+        <div class="search-suggest">
+            <h2>热门标签</h2>
+            <div class="search-tags">
+                <a class="search-tag" href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/">自动化<span>2</span></a>
+                <a class="search-tag" href="/tags/ai/">AI<span>1</span></a>
+                <a class="search-tag" href="/tags/roi/">ROI<span>1</span></a>
+                <a class="search-tag" href="/tags/rpa/">RPA<span>1</span></a>
+                <a class="search-tag" href="/tags/%E6%80%9D%E8%80%83/">思考<span>1</span></a>
+                <a class="search-tag" href="/tags/%E8%B4%A2%E5%8A%A1/">财务<span>1</span></a>
+                <a class="search-tag" href="/tags/%E8%BF%90%E8%90%A5/">运营<span>1</span></a>
+            </div>
+        </div>
+
+        <div class="search-suggest">
+            <h2>最近更新</h2>
+            <ul class="search-recent">
+                <li>
+                    <a href="/p/what-is-rpa/">
+                        <time datetime="2026-10-12">2026 年 10 月 12 日</time>
+                        <span>RPA：机器人流程自动化</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/p/what-is-roi/">
+                        <time datetime="2026-10-12">2026 年 10 月 12 日</time>
+                        <span>ROI：投资回报率</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/p/automating-ecommerce-work/">
+                        <time datetime="2026-10-12">2026 年 10 月 12 日</time>
+                        <span>电商工作的自动化</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="search-panel" id="searchPanel" hidden>
+        <div class="search-panel-head">
+            <h2 class="search-result-title" id="searchResultTitle" aria-live="polite"></h2>
+            <button type="button" class="search-clear" id="searchClear">清除关键词</button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-noresult" id="searchNoResult" hidden>
+            <b>没有找到「<span id="noresultKeyword"></span>」</b>
+            <p>试试更短的关键词，或者换一个说法。也可以直接浏览归档。</p>
+            <div class="search-noresult-actions">
+                <button type="button" class="search-action" id="noresultClear">清除关键词</button>
+                <a class="search-action" href="/archives/">浏览归档</a>
+            </div>
+        </div>
+    </section>
 </div>
 
 <script>
-    window.searchResultTitleTemplate = "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
-</script><script type="text/javascript" src="/ts/search.js" defer></script>
+(function () {
+    'use strict';
+
+    var form = document.getElementById('searchForm');
+    var input = document.getElementById('searchInput');
+    if (!form || !input) return;
+
+    var panel = document.getElementById('searchPanel');
+    var idle = document.getElementById('searchIdle');
+    var list = document.getElementById('searchResults');
+    var title = document.getElementById('searchResultTitle');
+    var empty = document.getElementById('searchNoResult');
+    var emptyKw = document.getElementById('noresultKeyword');
+    var emptyText = empty.querySelector('p');
+    var emptyTextDefault = emptyText.textContent;
+    var clearBtn = document.getElementById('searchClear');
+    var emptyClear = document.getElementById('noresultClear');
+    var jsonURL = form.getAttribute('data-json');
+
+    var cache = null;
+    var loading = null;
+    var timer = null;
+
+    function stripHTML(html) {
+        var box = document.createElement('div');
+        box.innerHTML = html || '';
+        return (box.textContent || '').replace(/\s+/g, ' ').trim();
+    }
+
+    function load() {
+        if (cache) return Promise.resolve(cache);
+        if (loading) return loading;
+        loading = fetch(jsonURL)
+            .then(function (res) {
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                return res.json();
+            })
+            .then(function (items) {
+                cache = items.map(function (item) {
+                    var text = stripHTML(item.content);
+                    return {
+                        title: item.title,
+                        titleLower: item.title.toLowerCase(),
+                        permalink: item.permalink,
+                        content: text,
+                        contentLower: text.toLowerCase()
+                    };
+                });
+                return cache;
+            });
+        return loading;
+    }
+
+    function mark(text, tokens) {
+        var lower = text.toLowerCase();
+        var ranges = [];
+        tokens.forEach(function (token) {
+            var from = 0;
+            while (from < lower.length) {
+                var at = lower.indexOf(token, from);
+                if (at === -1) break;
+                ranges.push([at, at + token.length]);
+                from = at + token.length;
+            }
+        });
+        if (!ranges.length) return document.createTextNode(text);
+
+        ranges.sort(function (a, b) { return a[0] - b[0]; });
+        var merged = [];
+        ranges.forEach(function (range) {
+            var last = merged[merged.length - 1];
+            if (last && range[0] <= last[1]) last[1] = Math.max(last[1], range[1]);
+            else merged.push(range.slice());
+        });
+
+        var frag = document.createDocumentFragment();
+        var cursor = 0;
+        merged.forEach(function (range) {
+            if (range[0] > cursor) frag.appendChild(document.createTextNode(text.slice(cursor, range[0])));
+            var el = document.createElement('mark');
+            el.textContent = text.slice(range[0], range[1]);
+            frag.appendChild(el);
+            cursor = range[1];
+        });
+        if (cursor < text.length) frag.appendChild(document.createTextNode(text.slice(cursor)));
+        return frag;
+    }
+
+    function preview(text, tokens) {
+        var lower = text.toLowerCase();
+        var hit = -1;
+        tokens.forEach(function (token) {
+            var at = lower.indexOf(token);
+            if (at !== -1 && (hit === -1 || at < hit)) hit = at;
+        });
+        if (hit === -1) return text.slice(0, 150) + (text.length > 150 ? '…' : '');
+        var start = Math.max(0, hit - 48);
+        var end = Math.min(text.length, start + 170);
+        return (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+    }
+
+    function reset() {
+        if (panel) panel.hidden = true;
+        if (idle) idle.hidden = false;
+        if (list) list.textContent = '';
+        if (title) title.textContent = '';
+        if (empty) empty.hidden = true;
+        if (emptyText) emptyText.textContent = emptyTextDefault;
+    }
+
+    function showIdle() {
+        reset();
+        try {
+            history.replaceState(null, '', window.location.pathname);
+        } catch (e) {}
+    }
+
+    function run(keyword) {
+        var tokens = keyword.toLowerCase().split(/\s+/).filter(Boolean);
+        if (!tokens.length) { showIdle(); return; }
+
+        var started = performance.now();
+
+        load().then(function (items) {
+            var hits = [];
+            items.forEach(function (item) {
+                var score = 0;
+                for (var i = 0; i < tokens.length; i++) {
+                    var inTitle = item.titleLower.indexOf(tokens[i]) !== -1;
+                    var inContent = item.contentLower.indexOf(tokens[i]) !== -1;
+                    if (!inTitle && !inContent) return;
+                    score += (inTitle ? 8 : 0) + (inContent ? 1 : 0);
+                }
+                hits.push({ item: item, score: score });
+            });
+            hits.sort(function (a, b) { return b.score - a.score; });
+
+            var seconds = ((performance.now() - started) / 1000).toFixed(2);
+            idle.hidden = true;
+            panel.hidden = false;
+            list.textContent = '';
+            title.textContent = hits.length + ' 篇结果 · ' + seconds + ' 秒';
+            empty.hidden = hits.length > 0;
+            emptyText.textContent = emptyTextDefault;
+
+            if (!hits.length) {
+                emptyKw.textContent = keyword;
+                return;
+            }
+
+            hits.forEach(function (hit) {
+                var article = document.createElement('article');
+                article.className = 'search-hit';
+
+                var link = document.createElement('a');
+                link.href = hit.item.permalink;
+                link.className = 'search-hit-link';
+
+                var h2 = document.createElement('h2');
+                h2.className = 'search-hit-title';
+                h2.appendChild(mark(hit.item.title, tokens));
+
+                var p = document.createElement('p');
+                p.className = 'search-hit-preview';
+                p.appendChild(mark(preview(hit.item.content, tokens), tokens));
+
+                link.appendChild(h2);
+                link.appendChild(p);
+                article.appendChild(link);
+                list.appendChild(article);
+            });
+        }).catch(function () {
+            idle.hidden = true;
+            panel.hidden = false;
+            list.textContent = '';
+            title.textContent = '索引未能加载';
+            empty.hidden = false;
+            emptyKw.textContent = keyword;
+            emptyText.textContent = '搜索索引加载失败，请刷新页面后重试。';
+        });
+
+        try {
+            var url = window.location.pathname + '?keyword=' + encodeURIComponent(keyword);
+            history.replaceState(null, '', url);
+        } catch (e) {}
+    }
+
+    function schedule() {
+        clearTimeout(timer);
+        var value = input.value.trim();
+        if (!value) { showIdle(); return; }
+        timer = setTimeout(function () { run(value); }, 140);
+    }
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        clearTimeout(timer);
+        var value = input.value.trim();
+        if (value) run(value);
+        else showIdle();
+    });
+
+    input.addEventListener('input', schedule);
+    input.addEventListener('search', schedule);
+    input.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            input.value = '';
+            showIdle();
+        }
+    });
+
+    function clear() {
+        input.value = '';
+        showIdle();
+        input.focus();
+    }
+    if (clearBtn) clearBtn.addEventListener('click', clear);
+    if (emptyClear) emptyClear.addEventListener('click', clear);
+
+    var initial = new URL(window.location.toString()).searchParams.get('keyword') || '';
+    if (initial) {
+        input.value = initial;
+        run(initial);
+    }
+})();
+</script>
 
 <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-        2026 Lyi
-    </section>
-    
-    <section class="powerby">
-        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.3">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
-    </section>
+    <div class="footer-brand">
+        <b>Lyi</b>
+        <p>这里，是英雄启程的地方...</p>
+    </div>
+
+    <div class="footer-links">
+        <nav class="footer-nav" aria-label="页脚导航">
+            <a href="/">主页</a>
+            <a href="/archives/">归档</a>
+            <a href="/reading/">阅读</a>
+            <a href="/about/">关于</a>
+            <a href="/search/">搜索</a>
+        </nav>
+        <div class="footer-social">
+            <a href="https://github.com/bxycode000" target="_blank" rel="noopener">GitHub</a>
+            <a href="/index.xml">RSS</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>
+            &copy;2026–2026 Lyi
+        </span>
+        <span>使用 Hugo 构建 · 主题 Stack</span>
+    </div>
 </footer>
 
 
