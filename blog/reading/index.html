@@ -200,6 +200,10 @@ select.year:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--ring)}
 .site-foot-links{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12.5px;justify-content:flex-end}
 .site-foot-links a{color:var(--ink-2)}
 .site-foot-links a:hover{color:var(--accent-ink);text-decoration:none}
+.site-foot .footer-stats{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 20px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;line-height:1.8;color:var(--ink-3)}
+.site-foot .footer-stat{display:inline-flex;align-items:baseline;gap:4px}
+.site-foot .footer-stat b{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;font-weight:600;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.site-foot .footer-stat--running .running-days{border-bottom:1px dotted var(--accent)}
 .site-foot-bottom{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;padding-top:14px;border-top:1px solid var(--line);font-size:11.5px;color:var(--ink-3)}
 @media (max-width:640px){
   .site-foot-inner{grid-template-columns:1fr;padding:24px 14px 28px}
@@ -292,8 +296,9 @@ select.year:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--ring)}
     <nav class="site-nav" aria-label="主导航">
       <a href="/blog/">主页</a>
       <a href="/blog/about/">关于</a>
-      <a href="/blog/archives/">归档</a>
+      <a href="/blog/archives/">博文</a>
       <a href="/blog/reading/" aria-current="page">阅读</a>
+      <a href="/blog/friends/">友链</a>
       <a href="/blog/search/">搜索</a>
     </nav>
     <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="切换到深色">
@@ -14824,13 +14829,31 @@ select.year:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--ring)}
     </div>
     <nav class="site-foot-links" aria-label="页脚导航">
       <a href="/blog/">主页</a>
-      <a href="/blog/archives/">归档</a>
+      <a href="/blog/archives/">博文</a>
+      <a href="/blog/reading/">阅读</a>
+      <a href="/blog/friends/">友链</a>
       <a href="/blog/about/">关于</a>
       <a href="/blog/search/">搜索</a>
       <a href="/blog/index.xml">RSS</a>
     </nav>
+    <div class="footer-stats">
+    <span class="footer-stat footer-stat--running">本博客已稳定运行 <b class="running-days" id="runningdays" data-start="2026-10-16">27</b> 天</span>
+    <span class="footer-stat footer-stat--count">发表了 <b>5</b> 篇文章 · 总计 <b>638</b> 字</span>
+</div>
+<script>
+(function () {
+    var el = document.getElementById('runningdays');
+    if (!el) return;
+    var start = new Date((el.getAttribute('data-start') || '').replace(/-/g, '/'));
+    if (isNaN(start.getTime())) return;
+    var days = Math.floor((Date.now() - start.getTime()) / 86400000);
+    if (days < 0) days = 0;
+    el.textContent = days.toLocaleString('zh-CN');
+})();
+</script>
+
     <div class="site-foot-bottom">
-      <span>&copy; 2026–2026 Lyi</span>
+      <span>&copy; 2026 Lyi</span>
       <span>使用 Hugo 构建 · 主题 Stack</span>
     </div>
   </div>

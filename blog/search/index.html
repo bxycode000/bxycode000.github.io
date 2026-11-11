@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 
 
-<link rel="stylesheet" href="/blog/scss/style.min.0764511e47be4e14cdf7c41cbf33aad9e6438418d35ceb1eb26bbb629171a714.css"><meta property='og:title' content="搜索">
+<link rel="stylesheet" href="/blog/scss/style.min.54348f46bee91f5410450442e1506387e4708638b10592f9e605586c739b4073.css"><meta property='og:title' content="搜索">
 <meta property='og:description' content="">
 <meta property='og:url' content='https://bxycode000.github.io/blog/search/'>
 <meta property='og:site_name' content='Lyi'>
@@ -24,6 +24,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/blog/favicon-192.png">
+<script src="/blog/js/split-text.min.fa222c056e0adbab6b441640276b07ef14a157e26626b03e12720926ecc838e0.js" integrity="sha256-&#43;iIsBW4K26trRBZAJ2sH7xShV&#43;JmJrA&#43;EnIJJuzIOOA=" defer></script>
 <meta property="og:image" content="https://bxycode000.github.io/images/og-cover.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -181,7 +182,7 @@
 
 
                 
-                <span>归档</span>
+                <span>博文</span>
             </a>
         </li>
         
@@ -197,6 +198,23 @@
 
                 
                 <span>阅读</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog/friends/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart-handshake" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572"/>
+  <path d="M12 6 8.707 9.293a1 1 0 0 0 0 1.414l.543.543c.69.69 1.81.69 2.5 0l1-1a3.182 3.182 0 0 1 4.5 0l2.25 2.25"/>
+  <path d="M12.5 15.5l2 2"/>
+  <path d="M15 13l2 2"/>
+</svg>
+
+                
+                <span>友链</span>
             </a>
         </li>
         
@@ -329,10 +347,10 @@
         <div class="search-results" id="searchResults"></div>
         <div class="search-noresult" id="searchNoResult" hidden>
             <b>没有找到「<span id="noresultKeyword"></span>」</b>
-            <p>试试更短的关键词，或者换一个说法。也可以直接浏览归档。</p>
+            <p>试试更短的关键词，或者换一个说法。也可以直接浏览博文。</p>
             <div class="search-noresult-actions">
                 <button type="button" class="search-action" id="noresultClear">清除关键词</button>
-                <a class="search-action" href="/blog/archives/">浏览归档</a>
+                <a class="search-action" href="/blog/archives/">浏览博文</a>
             </div>
         </div>
     </section>
@@ -572,11 +590,29 @@
         <p>这里，是英雄启程的地方...</p>
     </div>
 
+    <div class="footer-stats">
+    <span class="footer-stat footer-stat--running">本博客已稳定运行 <b class="running-days" id="runningdays" data-start="2026-10-16">27</b> 天</span>
+    <span class="footer-stat footer-stat--count">发表了 <b>5</b> 篇文章 · 总计 <b>638</b> 字</span>
+</div>
+<script>
+(function () {
+    var el = document.getElementById('runningdays');
+    if (!el) return;
+    var start = new Date((el.getAttribute('data-start') || '').replace(/-/g, '/'));
+    if (isNaN(start.getTime())) return;
+    var days = Math.floor((Date.now() - start.getTime()) / 86400000);
+    if (days < 0) days = 0;
+    el.textContent = days.toLocaleString('zh-CN');
+})();
+</script>
+
+
     <div class="footer-links">
         <nav class="footer-nav" aria-label="页脚导航">
             <a href="/blog/">主页</a>
-            <a href="/blog/archives/">归档</a>
+            <a href="/blog/archives/">博文</a>
             <a href="/blog/reading/">阅读</a>
+            <a href="/blog/friends/">友链</a>
             <a href="/blog/about/">关于</a>
             <a href="/blog/search/">搜索</a>
         </nav>
@@ -588,7 +624,7 @@
 
     <div class="footer-bottom">
         <span>
-            &copy;2026–2026 Lyi
+            &copy;2026 Lyi
         </span>
         <span>使用 Hugo 构建 · 主题 Stack</span>
     </div>

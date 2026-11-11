@@ -5,7 +5,13 @@
         <description>Recent content in Pages on Lyi</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bxycode000.github.io/blog/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://bxycode000.github.io/blog/page/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>友链</title>
+            <link>https://bxycode000.github.io/blog/friends/</link>
+            <pubDate>Thu, 12 Nov 2026 00:00:00 +0800</pubDate>
+            <guid>https://bxycode000.github.io/blog/friends/</guid>
+            <description></description>
+        </item><item>
             <title>阅读</title>
             <link>https://bxycode000.github.io/blog/reading/</link>
             <pubDate>Fri, 16 Oct 2026 12:00:00 +0800</pubDate>
@@ -18,7 +24,7 @@
             <guid>https://bxycode000.github.io/blog/about/</guid>
             <description>&lt;p&gt;我在这里记录三件事：正在做的运营、正在用的自动化，以及读过的书。它们大多来自具体问题，而不是阅读清单。&lt;/p&gt;&#xA;&lt;h2 id=&#34;现在在做什么&#34;&gt;现在在做什么&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;跨境电商&lt;/strong&gt;：关键词、Listing、广告与复盘。把每个环节拆开看，找出可以复用的部分。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;自动化&lt;/strong&gt;：用脚本和 RPA 接管重复的点击、录入与对账，把时间留给判断。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;阅读&lt;/strong&gt;：微信读书的长期用户。书架上的书总比读完的多，所以单独做了一个页面来管理。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;这个站点写什么&#34;&gt;这个站点写什么&#xA;&lt;/h2&gt;&lt;p&gt;三类内容：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;运营笔记&lt;/strong&gt;：跨境电商的具体问题、操作步骤与复盘，不写空泛的方法论。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;自动化实践&lt;/strong&gt;：RPA、Excel、脚本。解决一个具体问题，就记一篇。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;阅读记录&lt;/strong&gt;：读过的书、划过的线，以及它们和工作之间的关系。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;不写日更，不写「三天起号」，也不做课程。这里更像一个持续更新的工作台，而不是一个媒体。&lt;/p&gt;&#xA;&lt;h2 id=&#34;关于阅读页&#34;&gt;关于「阅读」页&#xA;&lt;/h2&gt;&lt;p&gt;阅读页的数据来自微信读书：书架与历史记录由脚本同步成 JSON，构建时由 Hugo 读入，再按在读、已读、想读、准备读和历史阅读分类。没有数据库，也不依赖第三方接口，所以加载很快，也不会因为某个服务下线而消失。&lt;/p&gt;&#xA;&lt;h2 id=&#34;这个站点怎么搭的&#34;&gt;这个站点怎么搭的&#xA;&lt;/h2&gt;&lt;p&gt;Hugo + Stack 主题，托管在 GitHub Pages。内容只有一份，通过 Hugo 的环境配置保留了两套主题；样式、模板与阅读页都是在这个基础上改的，没有换主题。&lt;/p&gt;&#xA;&lt;h2 id=&#34;联系&#34;&gt;联系&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://github.com/bxycode000&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;bxycode000&lt;/a&gt;。有问题或想聊，开一个 issue 最快。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;RSS&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://bxycode000.github.io/blog/index.xml&#34; &gt;订阅本站&lt;/a&gt;。新文章会直接推到阅读器里。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;站内没有留言板，也没有邮件列表。阅读是单向的，反馈走 GitHub 就够了。&lt;/p&gt;&#xA;</description>
         </item><item>
-            <title>归档</title>
+            <title>博文</title>
             <link>https://bxycode000.github.io/blog/archives/</link>
             <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
             <guid>https://bxycode000.github.io/blog/archives/</guid>
