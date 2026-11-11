@@ -1,503 +1,531 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-lang="zh" data-title-zh="关于 · Lyi" data-title-en="About · Lyi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#17191c">
-<title>关于 · Lyi</title>
-<meta name="description" content="Lyi，跨境电商运营。这里记录跨境电商、自动化，以及读过的书。">
-<link rel="icon" href="/favicon.ico">
+<html lang="zh-CN" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Lyi，跨境电商运营。这里记录跨境电商、自动化，以及读过的书。">
+<title>关于</title>
+
+
+<link rel="canonical" href="https://bxycode000.github.io/about/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 
-:root {
-  --hue: 210;
-  --vermillion: #ff735a;
-  --text-color: hsl(var(--hue), 100%, 94%);
-  --dim-text-color: hsla(var(--hue), 100%, 90%, .52);
-  --background-color: #17191c;
-  --link-color: #83a6ff;
-  --link-hover-color: #bdd0ff;
-  --panel: rgba(131, 166, 255, .05);
-  --line: rgba(131, 166, 255, .16);
-  --font-mono: "Roboto Mono", "Cascadia Mono", "SFMono-Regular", Consolas, "Noto Sans SC", "Microsoft YaHei", monospace;
-}
 
-* { box-sizing: border-box; }
-html, body { height: 100%; margin: 0; padding: 0; }
+<link rel="stylesheet" href="/scss/style.min.0764511e47be4e14cdf7c41cbf33aad9e6438418d35ceb1eb26bbb629171a714.css"><meta property='og:title' content="关于">
+<meta property='og:description' content="Lyi，跨境电商运营。这里记录跨境电商、自动化，以及读过的书。">
+<meta property='og:url' content='https://bxycode000.github.io/about/'>
+<meta property='og:site_name' content='Lyi'>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:published_time' content='2026-01-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-10-19T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="关于">
+<meta name="twitter:description" content="Lyi，跨境电商运营。这里记录跨境电商、自动化，以及读过的书。">
+    <link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<meta property="og:image" content="https://bxycode000.github.io/images/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lyi · 跨境电商、自动化与阅读记录">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bxycode000.github.io/images/og-cover.png">
 
-body {
-  font-family: var(--font-mono);
-  font-size: max(13px, 1.55vmin);
-  font-weight: 300;
-  line-height: 1.6;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  overflow: hidden;
-  -webkit-font-smoothing: antialiased;
-}
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-body.loading .terminal { opacity: 0; }
-.terminal { transition: opacity .35s ease; }
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-a, a:visited { color: var(--link-color); text-decoration: none; }
-a:hover { color: var(--link-hover-color); text-decoration: underline; }
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
 
-/* ---------- background ---------- */
-.circle-container { position: fixed; inset: 0; z-index: -1; overflow: hidden; }
-.circle {
-  position: absolute; top: -80vmax; left: 40%;
-  width: 100vmax; height: 100vmax; border-radius: 50%;
-  mix-blend-mode: soft-light; filter: blur(120px);
-}
-#circle1 { background-color: rgba(235, 223, 135, .2); animation: orbit 18s infinite ease-in-out alternate; }
-#circle2 { background-color: rgba(0, 200, 255, .2); animation: rorbit 24s infinite ease-in-out alternate; }
-#circle3 { background-color: rgba(254, 182, 255, .2); animation: orbit 20s infinite ease-in-out alternate-reverse; }
-.terminal-background {
-  position: fixed; inset: 0; z-index: -2;
-  background-color: #1c1a17;
-}
-.code-grid {
-  position: fixed; inset: 0; z-index: -3; opacity: 0;
-  background-image:
-    linear-gradient(rgba(131, 166, 255, .05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(131, 166, 255, .05) 1px, transparent 1px);
-  background-size: 48px 48px;
-}
+    <header>
+        <figure class="site-avatar">
+                <a href="/">
+                    <picture>
+                        <source srcset="/images/avatar-256.webp" type="image/webp">
+                        <img src="/images/avatar-256.jpg"
+                            width="256"
+                            height="256"
+                            class="site-logo"
+                            loading="eager"
+                            decoding="async"
+                            alt="Lyi">
+                    </picture>
+                </a>
+                
+            </figure>
+        
 
-/* ---------- layout ---------- */
-.container {
-  height: 100vh;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: clamp(16px, 2.6vw, 38px) clamp(18px, 4vw, 56px);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.terminal {
-  flex: 1;
-  min-height: 0;
-  display: flex;
-  flex-direction: column;
-  mix-blend-mode: screen;
-}
-.terminal-content {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 6px;
-}
-
-/* ---------- top bar ---------- */
-.topbar {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 16px; margin-bottom: 2.2rem; padding-bottom: .9rem;
-  border-bottom: 1px solid var(--line);
-  color: var(--dim-text-color); font-size: .82em;
-}
-.back-link { color: var(--dim-text-color); }
-.back-link:hover { color: var(--link-hover-color); text-decoration: none; }
-.topbar-right { display: flex; align-items: center; gap: 18px; }
-.topbar-right a { color: var(--dim-text-color); font-size: 1em; }
-.topbar-right a:hover { color: var(--link-hover-color); text-decoration: none; }
-
-.lang-btn {
-  background: var(--link-color); color: #17191c; border: none;
-  padding: .42rem .9rem; border-radius: 4px; cursor: pointer;
-  font-family: inherit; font-size: .92em; font-weight: 500;
-  transition: background .2s ease;
-}
-.lang-btn:hover { background: var(--link-hover-color); }
-
-/* ---------- terminal text ---------- */
-.old-prompt {
-  display: flex; align-items: center; flex-wrap: wrap; white-space: nowrap;
-  margin: 0 0 .35rem; color: var(--dim-text-color);
-}
-.username { color: var(--link-color); }
-.separator { margin: 0 .5em 0 .25em; }
-.typedLine { margin: .25rem 0; max-width: 86ch; white-space: pre-wrap; }
-.typedLine.hint { color: var(--dim-text-color); font-size: .92em; margin-top: .8rem; }
-.typedLine b { color: var(--vermillion); font-weight: 500; }
-
-.term-section { margin-top: 2.4rem; }
-.term-section h2, .about-block h2 {
-  margin: 0 0 .9rem; color: var(--link-color);
-  font-size: 1.25rem; font-weight: 500; letter-spacing: .02em;
-}
-.term-section h2 .mark { color: var(--vermillion); margin-right: .5em; font-weight: 400; }
-.term-section p { margin: 0 0 .9rem; max-width: 80ch; }
-.term-section ul { margin: .2rem 0 1rem; padding-left: 1.4rem; max-width: 82ch; }
-.term-section ol { margin: .2rem 0 1rem; padding-left: 0; max-width: 82ch; list-style: none; counter-reset: item; }
-.term-section li { margin: .55rem 0; padding-left: .2rem; }
-.term-section ul li::marker { color: var(--vermillion); }
-.term-section ol li { counter-increment: item; position: relative; padding-left: 2.4em; }
-.term-section ol li::before {
-  content: counter(item) ".";
-  position: absolute; left: 0; color: var(--vermillion);
-}
-.term-section li b { color: var(--link-color); font-weight: 500; }
-.small-note { color: var(--dim-text-color); font-size: .9em; max-width: 78ch; }
-.small-note a { color: var(--dim-text-color); text-decoration: underline; }
-.small-note a:hover { color: var(--link-hover-color); }
-
-/* about block borrowed from soulter */
-.about-block {
-  margin: 1.6rem 0 .4rem;
-  padding: 1.5rem 1.6rem;
-  background: var(--panel);
-  border-left: 3px solid var(--link-color);
-  border-radius: 4px;
-}
-.about-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: .9rem; }
-.about-header h2 { margin: 0; }
-.about-block p { margin: 0 0 1rem; max-width: 82ch; }
-.about-block p:last-child { margin-bottom: 0; }
-.about-block .hl { color: var(--link-color); }
-.about-block .accent { color: var(--vermillion); }
-
-/* ---------- prompt / command line ---------- */
-.prompt-line {
-  flex: 0 0 auto;
-  display: flex; align-items: center; gap: 0; flex-wrap: nowrap;
-  margin: 0; padding-top: .8rem;
-  border-top: 1px solid var(--line);
-  cursor: text;
-}
-.input-wrap { position: relative; display: inline-flex; flex: 0 1 auto; min-width: 2ch; max-width: calc(100vw - 130px); }
-input.inputField {
-  width: auto; min-width: 2ch; max-width: 100%; background: transparent; border: none; outline: none;
-  color: inherit; font-family: inherit; font-size: inherit; font-weight: inherit;
-  padding: 0; margin: 0; caret-color: var(--link-color);
-}
-.cursor { margin-left: 2px; color: var(--link-color); animation: cursor-blink 1.2s steps(1) infinite; }
-
-#command-output { margin-top: 1.2rem; }
-#command-output p { margin: .2rem 0; white-space: pre-wrap; }
-#command-output .cmd-echo { color: var(--dim-text-color); }
-#command-output .cmd-error { color: var(--vermillion); }
-
-/* ---------- scrollbar ---------- */
-.terminal-content::-webkit-scrollbar, #command-output::-webkit-scrollbar { width: 6px; }
-.terminal-content::-webkit-scrollbar-track, #command-output::-webkit-scrollbar-track { background: transparent; }
-.terminal-content::-webkit-scrollbar-thumb, #command-output::-webkit-scrollbar-thumb {
-  background-color: var(--dim-text-color); border-radius: 3px;
-}
-.terminal-content::-webkit-scrollbar-thumb:hover, #command-output::-webkit-scrollbar-thumb:hover { background-color: var(--link-color); }
-
-/* ---------- animation ---------- */
-@keyframes cursor-blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }
-@keyframes orbit { 0% { transform: rotate(0deg) translateX(20vmin) rotate(0deg); } 100% { transform: rotate(360deg) translateX(20vmin) rotate(-360deg); } }
-@keyframes rorbit { 0% { transform: rotate(360deg) translateX(20vmin) rotate(-360deg); } 100% { transform: rotate(0deg) translateX(20vmin) rotate(0deg); } }
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation: none !important; transition: none !important; }
-}
-
-/* ---------- responsive ---------- */
-@media (max-width: 720px) {
-  body { font-size: 13.5px; }
-  .container { padding: 18px 16px; }
-  .topbar { margin-bottom: 1.4rem; }
-  .topbar-right { gap: 12px; }
-  .about-block { padding: 1.1rem 1rem; }
-  .term-section { margin-top: 1.8rem; }
-  .term-section h2, .about-block h2 { font-size: 1.1rem; }
-  .term-section ul, .term-section ol { padding-left: 1.1rem; }
-  .about-header { align-items: flex-start; }
-}
-
-</style>
-</head>
-<body class="loading">
-<div class="circle-container" aria-hidden="true">
-  <div class="circle" id="circle1"></div>
-  <div class="circle" id="circle2"></div>
-  <div class="circle" id="circle3"></div>
-</div>
-<div class="terminal-background" aria-hidden="true"></div>
-<div class="code-grid" aria-hidden="true"></div>
-
-<main class="container">
-  <div class="terminal">
-    <div class="terminal-content" id="terminal-content">
-      <div class="topbar">
-        <a class="back-link" href="/">← cd /blog</a>
-        <div class="topbar-right">
-          <a href="/portfolio/" data-zh="CV" data-en="CV">CV</a>
-          <a href="/archives/" data-zh="归档" data-en="Archive">归档</a>
-          <button class="lang-btn" id="lang-toggle" type="button" aria-label="Switch language">EN</button>
+        <div class="site-meta">
+            <p class="site-name"><a href="/">Lyi</a></p>
+            <h2 class="site-description">这里，是英雄启程的地方...</h2>
         </div>
-      </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a
+                        href='https://github.com/bxycode000'
+                        
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
 
-      <p class="old-prompt"><span class="username">/lyi</span><span class="separator">$</span> whoami</p>
-      <p class="typedLine" data-typed data-zh="👋 你好，我是 Lyi —— 跨境电商运营，也是个爱折腾自动化的人。" data-en="👋 Hi, I'm Lyi — cross-border e-commerce operator and automation tinkerer.">👋 你好，我是 Lyi —— 跨境电商运营，也是个爱折腾自动化的人。</p>
-      <p class="typedLine" data-typed data-zh="关键词： Amazon · Listing · RPA · Excel · Python · 阅读 · Hugo" data-en="Keywords: Amazon · Listing · RPA · Excel · Python · Reading · Hugo">关键词： Amazon · Listing · RPA · Excel · Python · 阅读 · Hugo</p>
-      <p class="typedLine hint" data-zh-html="输入 <b>/help</b> 查看可用命令。" data-en-html="Type <b>/help</b> to see available commands.">输入 <b>/help</b> 查看可用命令。</p>
 
-      <section class="about-block" id="about-me">
-        <div class="about-header">
-          <h2 data-zh="关于我" data-en="About Me">关于我</h2>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a
+                        href='/portfolio/'
+                        
+                        title="CV"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cv" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="3" y="4" width="18" height="16" rx="2" />
+  <circle cx="8.5" cy="10.5" r="2" />
+  <path d="M5.4 16.2c.5-1.7 1.7-2.5 3.1-2.5s2.6.8 3.1 2.5" />
+  <path d="M14.5 9h4" />
+  <path d="M14.5 12.5h4" />
+  <path d="M14.5 16h2.5" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li  class='current'>
+            <a href='/about/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/reading/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M5 4h4a2 2 0 0 1 2 2v12a2 2 0 0 0 -2 -2h-4z" />
+  <path d="M19 4h-4a2 2 0 0 0 -2 2v12a2 2 0 0 1 2 -2h4z" />
+</svg>
+
+                
+                <span>阅读</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
         </div>
-        <p data-zh="我在跨境电商一线做运营：关键词、Listing、广告、库存和复盘。写在这里的东西大多来自具体问题，而不是阅读清单。" data-en="I work on the front line of cross-border e-commerce: keywords, listings, ads, inventory and reviews. Most of what I write here comes from concrete problems, not reading lists.">我在跨境电商一线做运营：关键词、Listing、广告、库存和复盘。写在这里的东西大多来自具体问题，而不是阅读清单。</p>
-        <p data-zh="也是个长期的自动化爱好者——用脚本和 RPA 接管重复的点击、录入与对账，把时间留给判断。" data-en="I am also a long-time automation tinkerer: scripts and RPA take over repetitive clicks, data entry and reconciliation, leaving the time for judgement.">也是个长期的自动化爱好者——用脚本和 RPA 接管重复的点击、录入与对账，把时间留给判断。</p>
-        <p data-zh="微信读书的长期用户。书架上的书总比读完的多，所以单独做了一个页面来管理它们。" data-en="A long-time WeChat Reading user. My shelf always holds more books than I have finished, so I built a separate page to keep track of them.">微信读书的长期用户。书架上的书总比读完的多，所以单独做了一个页面来管理它们。</p>
-      </section>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav class="toc-nav" id="TableOfContents">
+                
+  <ul>
+    <li><a href="#现在在做什么">现在在做什么</a></li>
+    <li><a href="#这个站点写什么">这个站点写什么</a></li>
+    <li><a href="#关于阅读页">关于「阅读」页</a></li>
+    <li><a href="#这个站点怎么搭的">这个站点怎么搭的</a></li>
+    <li><a href="#联系">联系</a></li>
+  </ul>
 
-      <section class="term-section" id="now">
-        <h2><span class="mark">##</span><span data-zh="现在在做什么" data-en="What I'm doing now">现在在做什么</span></h2>
-        <ul>
-          <li><b data-zh="跨境电商" data-en="Cross-border e-commerce">跨境电商</b><span data-zh=" —— 关键词、Listing、广告与复盘。把每个环节拆开看，找出可以复用的部分。" data-en=" — keywords, listings, ads and reviews. I take each step apart to find what can be reused."> —— 关键词、Listing、广告与复盘。把每个环节拆开看，找出可以复用的部分。</span></li>
-          <li><b data-zh="自动化" data-en="Automation">自动化</b><span data-zh=" —— 用脚本和 RPA 接管重复的点击、录入与对账，把时间留给判断。" data-en=" — scripts and RPA for repetitive clicking, entry and reconciliation, so time goes to judgement instead."> —— 用脚本和 RPA 接管重复的点击、录入与对账，把时间留给判断。</span></li>
-          <li><b data-zh="阅读" data-en="Reading">阅读</b><span data-zh=" —— 微信读书长期用户；书架总比读完的长，于是把「阅读」做成了独立页面。" data-en=" — a long-time WeChat Reading user; the shelf is always longer than the finished list, so Reading became its own page."> —— 微信读书长期用户；书架总比读完的长，于是把「阅读」做成了独立页面。</span></li>
-        </ul>
-      </section>
+            </nav>
+        </div>
+    </section>
 
-      <section class="term-section" id="writing">
-        <h2><span class="mark">##</span><span data-zh="这个站点写什么" data-en="What this site is about">这个站点写什么</span></h2>
-        <ol>
-          <li><b data-zh="运营笔记" data-en="Operations notes">运营笔记</b><span data-zh="：跨境电商的具体问题、操作步骤与复盘，不写空泛的方法论。" data-en=": concrete cross-border problems, steps and reviews — no empty methodology.">：跨境电商的具体问题、操作步骤与复盘，不写空泛的方法论。</span></li>
-          <li><b data-zh="自动化实践" data-en="Automation practice">自动化实践</b><span data-zh="：RPA、Excel、脚本。解决一个具体问题，就记一篇。" data-en=": RPA, Excel and scripts. One concrete problem solved, one note written.">：RPA、Excel、脚本。解决一个具体问题，就记一篇。</span></li>
-          <li><b data-zh="阅读记录" data-en="Reading records">阅读记录</b><span data-zh="：读过的书、划过的线，以及它们和工作之间的关系。" data-en=": books read, lines underlined, and how they connect back to the work.">：读过的书、划过的线，以及它们和工作之间的关系。</span></li>
-        </ol>
-        <p class="small-note" data-zh="不写日更，不写「三天起号」，也不做课程。这里更像一个持续更新的工作台，而不是一个媒体。" data-en="No daily posting, no get-rich-quick playbooks, no courses. This is a workbench that keeps getting updated, not a media outlet.">不写日更，不写「三天起号」，也不做课程。这里更像一个持续更新的工作台，而不是一个媒体。</p>
-      </section>
+            
+        
+    </aside>
 
-      <section class="term-section" id="stack">
-        <h2><span class="mark">##</span><span data-zh="这个站点怎么搭的" data-en="How this site is built">这个站点怎么搭的</span></h2>
-        <p data-zh="Hugo + Stack 主题，托管在 GitHub Pages。内容只有一份，通过 Hugo 的环境配置保留了两套主题；样式、模板与阅读页都是在这个基础上改的，没有换主题。" data-en="Hugo with the Stack theme, hosted on GitHub Pages. There is only one copy of the content; two themes are kept through Hugo environment configs. The styles, templates and Reading page are all built on top of that, without switching themes.">Hugo + Stack 主题，托管在 GitHub Pages。内容只有一份，通过 Hugo 的环境配置保留了两套主题；样式、模板与阅读页都是在这个基础上改的，没有换主题。</p>
-        <p data-zh="阅读页的数据来自微信读书：书架与历史记录由脚本同步成 JSON，构建时由 Hugo 读入，再按在读、已读、想读、准备读和历史阅读分类。没有数据库，也不依赖第三方接口。" data-en="The Reading page gets its data from WeChat Reading: shelves and history are synced to JSON by a script, read by Hugo at build time, then grouped into reading, finished, want, planned and history. No database, no third-party API.">阅读页的数据来自微信读书：书架与历史记录由脚本同步成 JSON，构建时由 Hugo 读入，再按在读、已读、想读、准备读和历史阅读分类。没有数据库，也不依赖第三方接口。</p>
-      </section>
 
-      <section class="term-section" id="contact">
-        <h2><span class="mark">##</span><span data-zh="联系" data-en="Contact">联系</span></h2>
-        <ul>
-          <li><b>GitHub</b><span data-zh="：" data-en=": ">：</span><a href="https://github.com/bxycode000" target="_blank" rel="me noopener">bxycode000</a><span data-zh=" —— 有问题或想聊，开一个 issue 最快。" data-en=" — an issue is the fastest way to reach me."> —— 有问题或想聊，开一个 issue 最快。</span></li>
-          <li><b>RSS</b><span data-zh="：" data-en=": ">：</span><a href="/index.xml">/index.xml</a><span data-zh=" —— 新文章会直接推到阅读器里。" data-en=" — new posts land straight in your reader."> —— 新文章会直接推到阅读器里。</span></li>
-          <li><b>CV</b><span data-zh="：" data-en=": ">：</span><a href="/portfolio/" data-zh="在线简历" data-en="online CV">在线简历</a><span data-zh=" —— 工作经历、技能与精选文章。" data-en=" — experience, skills and selected writing."> —— 工作经历、技能与精选文章。</span></li>
-        </ul>
-        <p class="small-note" data-zh="站内没有留言板，也没有邮件列表。阅读是单向的，反馈走 GitHub 就够了。" data-en="No comment board and no mailing list here. Reading is one-way; GitHub is enough for feedback.">站内没有留言板，也没有邮件列表。阅读是单向的，反馈走 GitHub 就够了。</p>
-      </section>
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
 
-      <p class="small-note" style="margin-top:2.4rem;">[EOF]</p>
-      <div id="command-output" aria-live="polite"></div>
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        
+        <h1 class="article-title">
+            <a href="/about/">关于</a>
+        </h1>
+        
+
+        
+        <p class="article-subtitle">
+            Lyi，跨境电商运营。这里记录跨境电商、自动化，以及读过的书。
+        </p>
+        
     </div>
 
-    <label class="prompt-line" id="prompt" for="command-input">
-      <span class="username">/lyi</span><span class="separator">$</span>
-      <span class="input-wrap">
-        <input class="inputField" id="command-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command">
-        <span class="cursor" aria-hidden="true">▋</span>
-      </span>
-    </label>
-  </div>
-</main>
+    
+    
+    
+    
+    
 
-<script>
-(function () {
-  'use strict';
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2026-01-26T00:00:00Z'>2026 年 1 月 26 日</time>
+                
 
-  var root = document.documentElement;
-  var LANG_KEY = 'lyi-about-lang';
-  var langBtn = document.getElementById('lang-toggle');
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
 
-  function readLang() {
-    try {
-      var v = window.localStorage.getItem(LANG_KEY);
-      if (v === 'zh' || v === 'en') return v;
-    } catch (e) {}
-    var q = new URLSearchParams(window.location.search).get('lang');
-    if (q === 'zh' || q === 'en') return q;
-    return 'zh';
-  }
 
-  function applyLanguage(lang) {
-    var isZh = lang === 'zh';
-    root.setAttribute('lang', isZh ? 'zh-CN' : 'en');
-    root.setAttribute('data-lang', lang);
 
-    document.querySelectorAll('[data-zh]').forEach(function (el) {
-      var v = el.getAttribute(isZh ? 'data-zh' : 'data-en');
-      if (v !== null) el.textContent = v;
-    });
-    document.querySelectorAll('[data-zh-html]').forEach(function (el) {
-      var v = el.getAttribute(isZh ? 'data-zh-html' : 'data-en-html');
-      if (v !== null) el.innerHTML = v;
-    });
+                    <time class="article-time--reading">
+                        阅读时长: 2 分钟
+                    </time>
+                
+            </div>
+        
 
-    var title = root.getAttribute(isZh ? 'data-title-zh' : 'data-title-en');
-    if (title) document.title = title;
-    if (langBtn) {
-      langBtn.textContent = isZh ? 'EN' : '中文';
-      langBtn.setAttribute('aria-label', isZh ? 'Switch to English' : '切换到中文');
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+    <aside class="article-toc">
+        <details>
+            <summary>
+                <div class="article-toc-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                    <span>目录</span>
+                </div>
+            </summary>
+            <nav class="toc-nav">
+                
+  <ul>
+    <li><a href="#现在在做什么">现在在做什么</a></li>
+    <li><a href="#这个站点写什么">这个站点写什么</a></li>
+    <li><a href="#关于阅读页">关于「阅读」页</a></li>
+    <li><a href="#这个站点怎么搭的">这个站点怎么搭的</a></li>
+    <li><a href="#联系">联系</a></li>
+  </ul>
+
+            </nav>
+        </details>
+    </aside>
+    
+
+    <section class="article-content">
+    
+    
+    <!-- 本页由 layouts/page/about.html 渲染（终端风格，中英双语）；要改文案请改该模板。 -->
+<p>我在这里记录三件事：正在做的运营、正在用的自动化，以及读过的书。它们大多来自具体问题，而不是阅读清单。</p>
+<h2 id="现在在做什么">现在在做什么
+</h2><ul>
+<li><strong>跨境电商</strong>：关键词、Listing、广告与复盘。把每个环节拆开看，找出可以复用的部分。</li>
+<li><strong>自动化</strong>：用脚本和 RPA 接管重复的点击、录入与对账，把时间留给判断。</li>
+<li><strong>阅读</strong>：微信读书的长期用户。书架上的书总比读完的多，所以单独做了一个页面来管理。</li>
+</ul>
+<h2 id="这个站点写什么">这个站点写什么
+</h2><p>三类内容：</p>
+<ol>
+<li><strong>运营笔记</strong>：跨境电商的具体问题、操作步骤与复盘，不写空泛的方法论。</li>
+<li><strong>自动化实践</strong>：RPA、Excel、脚本。解决一个具体问题，就记一篇。</li>
+<li><strong>阅读记录</strong>：读过的书、划过的线，以及它们和工作之间的关系。</li>
+</ol>
+<p>不写日更，不写「三天起号」，也不做课程。这里更像一个持续更新的工作台，而不是一个媒体。</p>
+<h2 id="关于阅读页">关于「阅读」页
+</h2><p>阅读页的数据来自微信读书：书架与历史记录由脚本同步成 JSON，构建时由 Hugo 读入，再按在读、已读、想读、准备读和历史阅读分类。没有数据库，也不依赖第三方接口，所以加载很快，也不会因为某个服务下线而消失。</p>
+<h2 id="这个站点怎么搭的">这个站点怎么搭的
+</h2><p>Hugo + Stack 主题，托管在 GitHub Pages。内容只有一份，通过 Hugo 的环境配置保留了两套主题；样式、模板与阅读页都是在这个基础上改的，没有换主题。</p>
+<h2 id="联系">联系
+</h2><ul>
+<li><strong>GitHub</strong>：<a class="link" href="https://github.com/bxycode000"  target="_blank" rel="noopener"
+    >bxycode000</a>。有问题或想聊，开一个 issue 最快。</li>
+<li><strong>RSS</strong>：<a class="link" href="/index.xml" >订阅本站</a>。新文章会直接推到阅读器里。</li>
+</ul>
+<p>站内没有留言板，也没有邮件列表。阅读是单向的，反馈走 GitHub 就够了。</p>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+
+    
+    <section class="article-copyright inline-meta">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>本文采用 <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"  target="_blank" rel="noopener"
+    >CC BY-NC-SA 4.0</a> 许可协议。</span>
+    </section>
+    <section class="article-lastmod inline-meta">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2026 年 10 月 19 日
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+
+     
+    
+        
+
+
+    
+
+    <footer class="site-footer">
+    <div class="footer-brand">
+        <b>Lyi</b>
+        <p>这里，是英雄启程的地方...</p>
+    </div>
+
+    <div class="footer-links">
+        <nav class="footer-nav" aria-label="页脚导航">
+            <a href="/">主页</a>
+            <a href="/archives/">归档</a>
+            <a href="/reading/">阅读</a>
+            <a href="/about/">关于</a>
+            <a href="/search/">搜索</a>
+        </nav>
+        <div class="footer-social">
+            <a href="https://github.com/bxycode000" target="_blank" rel="noopener">GitHub</a>
+            <a href="/index.xml">RSS</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>
+            &copy;2026–2026 Lyi
+        </span>
+        <span>使用 Hugo 构建 · 主题 Stack</span>
+    </div>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
     }
-    try { window.localStorage.setItem(LANG_KEY, lang); } catch (e) {}
-  }
-
-  var currentLang = readLang();
-  applyLanguage(currentLang);
-
-  if (langBtn) {
-    langBtn.addEventListener('click', function () {
-      currentLang = root.getAttribute('data-lang') === 'zh' ? 'en' : 'zh';
-      applyLanguage(currentLang);
-    });
-  }
-
-   
-  var typedEls = Array.prototype.slice.call(document.querySelectorAll('[data-typed]'));
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  function typeIntro() {
-    if (reduceMotion || !typedEls.length) return;
-    typedEls.forEach(function (el) {
-      el.dataset.full = el.textContent;
-      el.textContent = '';
-    });
-    var i = 0;
-    function nextLine() {
-      if (i >= typedEls.length) return;
-      var el = typedEls[i];
-      var text = el.dataset.full;
-      var n = 0;
-      el.classList.add('is-typing');
-      var timer = setInterval(function () {
-        n += 1;
-        el.textContent = text.slice(0, n);
-        if (n >= text.length) {
-          clearInterval(timer);
-          el.classList.remove('is-typing');
-          i += 1;
-          setTimeout(nextLine, 120);
-        }
-      }, 18);
-    }
-    setTimeout(nextLine, 260);
-  }
-  window.addEventListener('load', function () {
-    document.body.classList.remove('loading');
-    typeIntro();
-  });
-
-   
-  var input = document.getElementById('command-input');
-  var output = document.getElementById('command-output');
-  var prompt = document.getElementById('prompt');
-
-  var HELP_ZH = [
-    '/help      显示这份帮助',
-    '/about     跳到「关于我」',
-    '/now       现在在做什么',
-    '/writing   这个站点写什么',
-    '/stack     这个站点怎么搭的',
-    '/contact   联系方式',
-    '/cv        打开在线 CV',
-    '/blog      回到博客首页',
-    '/zh /en    切换中英文',
-    '/clear     清空输出'
-  ];
-  var HELP_EN = [
-    '/help      show this help',
-    '/about     jump to About Me',
-    '/now       what I am doing now',
-    '/writing   what this site is about',
-    '/stack     how this site is built',
-    '/contact   contact links',
-    '/cv        open my online CV',
-    '/blog      back to the blog',
-    '/zh /en    switch language',
-    '/clear     clear output'
-  ];
-
-  function print(text, cls) {
-    var p = document.createElement('p');
-    if (cls) p.className = cls;
-    p.textContent = text;
-    output.appendChild(p);
-    var scroller = document.getElementById('terminal-content');
-    if (scroller) scroller.scrollTop = scroller.scrollHeight;
-  }
-  function printMany(lines) { lines.forEach(function (l) { print(l); }); }
-
-  function scrollToId(id) {
-    var el = document.querySelector(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  function run(raw) {
-    var cmd = raw.trim();
-    if (!cmd) return;
-    var isZh = root.getAttribute('data-lang') === 'zh';
-    print('/lyi $ ' + cmd, 'cmd-echo');
-
-    switch (cmd.toLowerCase()) {
-      case '/help':
-      case 'help':
-        printMany(isZh ? HELP_ZH : HELP_EN); break;
-      case '/about':
-        scrollToId('#about-me'); print(isZh ? 'cd ~/about' : 'cd ~/about'); break;
-      case '/now':
-        scrollToId('#now'); print('cd ~/now'); break;
-      case '/writing':
-        scrollToId('#writing'); print('cd ~/writing'); break;
-      case '/stack':
-        scrollToId('#stack'); print('cd ~/stack'); break;
-      case '/contact':
-        scrollToId('#contact'); print('cd ~/contact'); break;
-      case '/cv':
-        print(isZh ? '正在打开 /portfolio/ ...' : 'opening /portfolio/ ...');
-        window.location.href = '/portfolio/'; break;
-      case '/blog':
-        print(isZh ? '返回博客 ...' : 'back to blog ...');
-        window.location.href = '/'; break;
-      case '/zh':
-        currentLang = 'zh'; applyLanguage('zh'); print('language = zh-CN'); break;
-      case '/en':
-        currentLang = 'en'; applyLanguage('en'); print('language = en'); break;
-      case '/clear':
-        output.innerHTML = ''; break;
-      case 'whoami':
-        print(isZh ? 'Lyi — 跨境电商运营 / 自动化爱好者' : 'Lyi — cross-border e-commerce operator / automation tinkerer'); break;
-      case 'ls':
-        print('about  now  writing  stack  contact  cv  blog'); break;
-      default:
-        print((isZh ? 'command not found: ' : 'command not found: ') + cmd + (isZh ? ' —— 试试 /help' : ' — try /help'), 'cmd-error');
-    }
-  }
-
-  if (input) {
-    var resizeInput = function () {
-      var n = Math.max(2, (input.value || '').length + 1);
-      input.style.width = n + 'ch';
-    };
-    input.addEventListener('input', resizeInput);
-    resizeInput();
-    input.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        run(input.value);
-        input.value = '';
-      }
-    });
-  }
-  if (prompt) {
-    prompt.addEventListener('click', function () { if (input) input.focus(); });
-  }
-  window.addEventListener('keydown', function (e) {
-    if (e.key === '/' && document.activeElement !== input) {
-      e.preventDefault();
-      if (input) input.focus();
-    }
-  });
-
-  
-  var autoCmd = new URLSearchParams(window.location.search).get('cmd');
-  if (autoCmd) setTimeout(function () { run(autoCmd); }, 500);
-})();
 </script>
-</body>
+
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/ts/main.aacde0fe843a61e74e2ce59e0ca339c689d89deeb1a57cd187661e9d0df02c5b.js" defer></script>
+
+
+    </body>
 </html>
