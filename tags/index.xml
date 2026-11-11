@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Lyi</title>
-        <link>https://bxycode000.github.io/tags/</link>
+        <link>https://bxycode000.github.io/blog/tags/</link>
         <description>Recent content in Tags on Lyi</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Mon, 12 Oct 2026 13:21:00 +0800</lastBuildDate><atom:link href="https://bxycode000.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 12 Oct 2026 13:21:00 +0800</lastBuildDate><atom:link href="https://bxycode000.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" /><item>
             <title>RPA</title>
-            <link>https://bxycode000.github.io/tags/rpa/</link>
+            <link>https://bxycode000.github.io/blog/tags/rpa/</link>
             <pubDate>Mon, 12 Oct 2026 13:21:00 +0800</pubDate>
-            <guid>https://bxycode000.github.io/tags/rpa/</guid>
+            <guid>https://bxycode000.github.io/blog/tags/rpa/</guid>
             <description></description>
         </item><item>
             <title>自动化</title>
-            <link>https://bxycode000.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+            <link>https://bxycode000.github.io/blog/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
             <pubDate>Mon, 12 Oct 2026 13:21:00 +0800</pubDate>
-            <guid>https://bxycode000.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
+            <guid>https://bxycode000.github.io/blog/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
             <description></description>
         </item><item>
             <title>ROI</title>
-            <link>https://bxycode000.github.io/tags/roi/</link>
+            <link>https://bxycode000.github.io/blog/tags/roi/</link>
             <pubDate>Mon, 12 Oct 2026 12:29:00 +0800</pubDate>
-            <guid>https://bxycode000.github.io/tags/roi/</guid>
+            <guid>https://bxycode000.github.io/blog/tags/roi/</guid>
             <description></description>
         </item><item>
             <title>财务</title>
-            <link>https://bxycode000.github.io/tags/%E8%B4%A2%E5%8A%A1/</link>
+            <link>https://bxycode000.github.io/blog/tags/%E8%B4%A2%E5%8A%A1/</link>
             <pubDate>Mon, 12 Oct 2026 12:29:00 +0800</pubDate>
-            <guid>https://bxycode000.github.io/tags/%E8%B4%A2%E5%8A%A1/</guid>
+            <guid>https://bxycode000.github.io/blog/tags/%E8%B4%A2%E5%8A%A1/</guid>
             <description></description>
         </item><item>
             <title>AI</title>
-            <link>https://bxycode000.github.io/tags/ai/</link>
+            <link>https://bxycode000.github.io/blog/tags/ai/</link>
             <pubDate>Mon, 12 Oct 2026 12:26:00 +0800</pubDate>
-            <guid>https://bxycode000.github.io/tags/ai/</guid>
+            <guid>https://bxycode000.github.io/blog/tags/ai/</guid>
             <description></description>
         </item><item>
             <title>思考</title>
-            <link>https://bxycode000.github.io/tags/%E6%80%9D%E8%80%83/</link>
+            <link>https://bxycode000.github.io/blog/tags/%E6%80%9D%E8%80%83/</link>
             <pubDate>Tue, 18 Aug 2026 20:24:00 +0800</pubDate>
-            <guid>https://bxycode000.github.io/tags/%E6%80%9D%E8%80%83/</guid>
+            <guid>https://bxycode000.github.io/blog/tags/%E6%80%9D%E8%80%83/</guid>
             <description></description>
         </item><item>
             <title>运营</title>
-            <link>https://bxycode000.github.io/tags/%E8%BF%90%E8%90%A5/</link>
+            <link>https://bxycode000.github.io/blog/tags/%E8%BF%90%E8%90%A5/</link>
             <pubDate>Tue, 18 Aug 2026 20:24:00 +0800</pubDate>
-            <guid>https://bxycode000.github.io/tags/%E8%BF%90%E8%90%A5/</guid>
+            <guid>https://bxycode000.github.io/blog/tags/%E8%BF%90%E8%90%A5/</guid>
             <description></description>
         </item></channel>
 </rss>
